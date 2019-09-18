@@ -33,6 +33,9 @@ module.exports = function(Velocity, utils) {
         } else if (c === '<') {
           cstr = "&lt;"
           escape = true
+        } else if (c === '"') {
+          cstr = "&quot;"
+          escape = true
         } else if (c === '>') {
           cstr = "&gt;"
           escape = true
